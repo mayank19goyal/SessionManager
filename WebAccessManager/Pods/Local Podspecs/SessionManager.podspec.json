@@ -1,0 +1,32 @@
+{
+  "name": "SessionManager",
+  "version": "1.0.0",
+  "summary": "Call the Restful API through the SessionManager.",
+  "description": "Call the Restful API through the SessionManager. Developed by Mayank Goyal.",
+  "homepage": "https://github.com/mayank19goyal/SessionManager",
+  "license": "MIT",
+  "authors": {
+    "Mayank Goyal": "mayank.goyal@ibm.com"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "swift_versions": "5.0",
+  "source": {
+    "git": "https://github.com/mayank19goyal/SessionManager.git",
+    "tag": "1.0.0"
+  },
+  "source_files": "SessionManager/SessionManager",
+  "dependencies": {
+    "ReachabilitySwift": [
+      "~> 3"
+    ],
+    "AlamofireImage": [
+      "~> 3.3"
+    ],
+    "Alamofire": [
+      "~> 4.7"
+    ]
+  },
+  "swift_version": "5.0"
+}

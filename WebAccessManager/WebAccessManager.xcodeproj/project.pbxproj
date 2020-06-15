@@ -13,9 +13,12 @@
 		6DD37CFD2492327A00AA5414 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD37CFB2492327A00AA5414 /* Main.storyboard */; };
 		6DD37CFF2492327D00AA5414 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DD37CFE2492327D00AA5414 /* Assets.xcassets */; };
 		6DD37D022492327D00AA5414 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD37D002492327D00AA5414 /* LaunchScreen.storyboard */; };
+		8B6F43F76F4B565269144D7E /* Pods_WebAccessManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB8BCE625FB80E64391C346 /* Pods_WebAccessManager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4DB8BCE625FB80E64391C346 /* Pods_WebAccessManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebAccessManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57477F2AE89B55ADB1D833C2 /* Pods-WebAccessManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebAccessManager.debug.xcconfig"; path = "Target Support Files/Pods-WebAccessManager/Pods-WebAccessManager.debug.xcconfig"; sourceTree = "<group>"; };
 		6DD37CF22492327A00AA5414 /* WebAccessManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebAccessManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD37CF52492327A00AA5414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DD37CF72492327A00AA5414 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		6DD37CFE2492327D00AA5414 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DD37D012492327D00AA5414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DD37D032492327D00AA5414 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE29ACED6CE4468169D15BCC /* Pods-WebAccessManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebAccessManager.release.xcconfig"; path = "Target Support Files/Pods-WebAccessManager/Pods-WebAccessManager.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B6F43F76F4B565269144D7E /* Pods_WebAccessManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				6DD37CF42492327A00AA5414 /* WebAccessManager */,
 				6DD37CF32492327A00AA5414 /* Products */,
+				7CDFD8B36435A8BAF3357F12 /* Pods */,
+				8903D7B91EFAE270F9BA66CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = WebAccessManager;
 			sourceTree = "<group>";
 		};
+		7CDFD8B36435A8BAF3357F12 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57477F2AE89B55ADB1D833C2 /* Pods-WebAccessManager.debug.xcconfig */,
+				DE29ACED6CE4468169D15BCC /* Pods-WebAccessManager.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8903D7B91EFAE270F9BA66CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DB8BCE625FB80E64391C346 /* Pods_WebAccessManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DD37D062492327D00AA5414 /* Build configuration list for PBXNativeTarget "WebAccessManager" */;
 			buildPhases = (
+				D77C0D5A7D3D5EB62247890E /* [CP] Check Pods Manifest.lock */,
 				6DD37CEE2492327A00AA5414 /* Sources */,
 				6DD37CEF2492327A00AA5414 /* Frameworks */,
 				6DD37CF02492327A00AA5414 /* Resources */,
+				1A6EB64D4A5C71CF902F69B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A6EB64D4A5C71CF902F69B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebAccessManager/Pods-WebAccessManager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebAccessManager/Pods-WebAccessManager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebAccessManager/Pods-WebAccessManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D77C0D5A7D3D5EB62247890E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebAccessManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6DD37CEE2492327A00AA5414 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		6DD37D072492327D00AA5414 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57477F2AE89B55ADB1D833C2 /* Pods-WebAccessManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		6DD37D082492327D00AA5414 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE29ACED6CE4468169D15BCC /* Pods-WebAccessManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

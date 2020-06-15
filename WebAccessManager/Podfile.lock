@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
+  - ReachabilitySwift (3)
+  - SessionManager (1.0.0):
+    - Alamofire (~> 4.7)
+    - AlamofireImage (~> 3.3)
+    - ReachabilitySwift (~> 3)
+
+DEPENDENCIES:
+  - SessionManager (from `../SessionManager/`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - ReachabilitySwift
+
+EXTERNAL SOURCES:
+  SessionManager:
+    :path: "../SessionManager/"
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+  SessionManager: 313b5cf7958a5aa5f1b2587598adbde83a87ded7
+
+PODFILE CHECKSUM: a5b3e5c9f761ed3d5962803afd066e0d070276f6
+
+COCOAPODS: 1.8.4
